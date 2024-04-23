@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+
+{{ .Content }}
+
+<section class="articles">
+   {{- range.Data.Pages -}}
+   <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+   <p>{{ .Params.Author }}  •  {{ .Date.Format "January 2, 2006" }}<p>
+   <p>{{ .Description }}</p>
+   <hr>
+   {{ end }}
+</section>
+
+{{ partial "footer.html" . }}

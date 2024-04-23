@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+   <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+   {{ $style := resources.Get "/css/style.css" | fingerprint }}
+   <link rel="stylesheet" href="{{ $style.RelPermalink }}" type="text/css" media="all" />
+   <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+{{ partial "nav.html" . }}
+<main class="content">

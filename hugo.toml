@@ -1,0 +1,48 @@
+baseURL = 'https://upwardgazemin.com/'
+languageCode = 'en-us'
+title = 'Upward Gaze'
+
+[taxonomies]
+   author = 'author'
+
+[menu]
+
+   [[menu.main]]
+      name = "Home"
+      url = "/"
+      weight = 10
+
+   [[menu.main]]
+      name = "Articles"
+      url = "/articles"
+      weight = 20
+
+   [[menu.main]]
+      name = "About"
+      url = "/about"
+      weight = 30
+
+   [[menu.main]]
+      name = "Connect"
+      url = "/connect"
+      weight = 40
+
+   [[menu.connect]]
+      name = "Twitter"
+      url = "https://twitter.com/UpwardGazeMin"
+      weight = 30
+
+   [[menu.connect]]
+      name = "Instagram"
+      url = "https://instagram.com/upwardgazemin"
+      weight = 40
+
+   [[menu.connect]]
+      name = "YouTube"
+      url = "https://www.youtube.com/channel/UCSHNMKFgVFdxmaLeaOfflHw"
+      weight = 50
+
+   [[menu.connect]]
+      name = "Rumble"
+      url = "https://rumble.com/c/c-445725"
+      weight = 60
