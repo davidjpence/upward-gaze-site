@@ -235,16 +235,28 @@ blockquote p {
 
 @media (min-width: 320px) and (max-width: 999px) {
    .header-svg {
-      width: 75%;
+      width: 80%;
    }
 
    .header-line {
       width: 80%;
    }
 
+   .site-nav {
+      display: block;
+   }
+
+   .nav-link {
+      font-size: 1rem;
+   }
+
+   .content {
+      margin: 0 10%;
+   }
+
    .recent-articles {
       display: block;
-      width: 90%;
+      width: 100%;
       margin-bottom: 2rem;
    }
 
