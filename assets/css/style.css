@@ -3,12 +3,14 @@
    font-style: normal;
    src: url("/fonts/Montserrat-VF.woff2") format("woff2");
    font-weight: 400 900;
+   font-display: swap;
 }
 
 @font-face {
    font-family: "Inknut";
    font-style: bold;
    src: url("/fonts/InknutAntiqua-Bold.ttf") format("ttf");
+   font-display: swap;
 }
 
 :root{
@@ -31,6 +33,10 @@ a {
 
 a:hover {
    text-decoration: underline;
+}
+
+hr {
+   border: 1px solid var(--text-color);
 }
 
 button {
