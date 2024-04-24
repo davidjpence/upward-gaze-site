@@ -1,5 +1,7 @@
 ---
 title: "Site Information"
+Author: "David J. Pence"
+MetaDescription: "Read about our privacy policy, open source site, and copyright information."
 ---
 
 This website was built from scratch with the static website generator Hugo. The website makes no calls to Google, or any other privacy-invasive service. This means everything, including fonts and images, are hosted by UpwardGaze.

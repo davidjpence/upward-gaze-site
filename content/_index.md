@@ -1,5 +1,7 @@
 ---
 title: "Upward Gaze"
+Author: "David J. Pence"
+MetaDescription: "We are slaves of Christ, the one true King."
 ---
 
 {{< about title="About Us">}}

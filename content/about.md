@@ -1,5 +1,7 @@
 ---
 title: "About"
+Author: "David J. Pence"
+MetaDescription: "Learn about Upward Gaze and read our statement of Faith"
 ---
 
 # About

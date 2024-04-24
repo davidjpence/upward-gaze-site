@@ -2,11 +2,38 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
    {{ $style := resources.Get "/css/style.css" | fingerprint }}
    <link rel="stylesheet" href="{{ $style.RelPermalink }}" type="text/css" media="all" />
    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+
+   <!--- Twitter Cards --->
+   <meta name="twitter:card" content="summary" />
+   <meta name="twitter:site" content="@UpwardGazeMin" />
+   <meta name="twitter:creator" property="twitter:creator" content="@DavidJPence" />
+   <meta name="twitter:domain" property="twitter:domain" content="upwardgazemin.com" />
+   <meta name="twitter:title" content="{{ .Title }}" />
+   <meta name="twitter:description" property="twitter:description" content="{{ .Params.MetaDescription }}" />
+   <meta name="twitter:image" property="twitter:image" content="https://upwardgazemin.com/favicon.png" />
+   <meta name="og:image:alt" property="og:image:alt" content="Upward Gaze Logo" />
+
+   <!--- Web Scrapers --->
+   <meta name="robots" content="index, follow" />
+
+   <meta name="description" content="{{ .Params.MetaDescription }}" />
+   <meta name="keywords" content="Christianity, Religion, Theology" />
+   <meta name="Author" content="{{ .Params.Author }}" />
+
+   <!--- Facebook Standards --->
+   <meta property="og:site_name" content="Upward Gaze" />
+   <meta name="og:title" property="og:title" content="Upward Gaze" />
+   <meta property="og:description" content="{{ .Params.MetaDescription }}" />
+   <meta name="og:image" content="https://upwardgazemin.com/favicon.png" />
+   <meta property="og:url" content="upwardgazemin.com" />
+   <meta property="og:type" content="website" />
+
 </head>
 <body>
 
